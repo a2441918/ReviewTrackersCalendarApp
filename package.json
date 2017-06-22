@@ -1,0 +1,24 @@
+{
+  "name": "webpack-react-boilerplate",
+  "version": "0.0.1",
+  "description": "Webpack 3 React boilerplate",
+  "private": false,
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:thekeogh/webpack-react.git"
+  },
+  "keywords": [
+    "react",
+    "webpack3",
+    "boilerplate"
+  ],
+  "author": "Steve McKeogh",
+  "bugs": {
+    "url": "https://github.com/thekeogh/webpack-react/issues"
+  },
+  "homepage": "http://keogh.site"
+}
