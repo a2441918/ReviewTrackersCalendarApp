@@ -8,3 +8,4 @@ build
 .module-cache
 logs
 *.log
+.env
