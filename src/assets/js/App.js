@@ -7,9 +7,9 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <p><img src={Google} /></p>
-        <p><img src={Alaska} width="300" /></p>
-        <p>Hello</p>
+        <p><img src={Google} alt="Google" /></p>
+        <p><img src={Alaska} width="300" alt="Alaska" /></p>
+        <p>Hellokk</p>
         <div className={Styles.box}>
           Moduled scss class
         </div>
