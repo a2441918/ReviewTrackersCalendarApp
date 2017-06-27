@@ -11,13 +11,13 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   
-  devtool: 'cheap-module-source-map',
+  devtool: false,
   
   context: resolve(__dirname, 'src'),
   
   entry: [
     './index.js',
-    //'./src/assets/scss/app.scss'
+    './assets/scss/app.scss'
   ],
   
   output: {
@@ -35,8 +35,15 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[hash:base64:5]', 'postcss-loader', 'sass-loader'],
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            'css-loader?modules&importLoaders=1&localIdentName=[hash:base64:5]',
+            'postcss-loader',
+            { loader: 'sass-loader', query: { sourceMap: false } }
+          ],
+        }),
       },
       { test: /\.(png|jpg|gif)$/, use: 'url-loader?limit=15000&name=assets/[hash:base64:5].[ext]' },
       { test: /\.eot(\?v=\d+.\d+.\d+)?$/, use: 'file-loader' },
@@ -73,7 +80,8 @@ module.exports = {
       },
       comments: false,
     }),
-    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } })
+    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
+    new ExtractTextPlugin({ filename: 'app-[hash].css', disable: false, allChunks: true })
   ]
   
 }
