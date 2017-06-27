@@ -5,8 +5,9 @@ Simple ES6 React with Sass boilerplate under Webpack 3. Based loosely on [Klimen
 - [x] [React](https://facebook.github.io/react/) 15.6.x
 - [x] [React Router](https://reacttraining.com/react-router/) 4.1.x
 - [x] [Webpack](https://webpack.github.io/) 3.0.x with [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html) 2.5.x
-- [x] [Webpack dashboard](https://github.com/FormidableLabs/webpack-dashboard) included if prefered.
-- [x] ECMAScript 6 support through [Babel](https://babeljs.io/).
+- [x] [Webpack dashboard](https://github.com/FormidableLabs/webpack-dashboard) included if prefered
+- [x] Sass support utilising [CSS modules](https://css-modules.github.io/webpack-demo/)
+- [x] ECMAScript 6 support through [Babel](https://babeljs.io/)
 - [x] Hot Module Replacement using [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 - [x] Local .env config
 - [x] Production config with separate CSS generation with [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)

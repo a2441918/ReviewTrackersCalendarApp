@@ -10,7 +10,7 @@ export default class App extends Component {
         <p><img src={Google} /></p>
         <p><img src={Alaska} width="300" /></p>
         <p>Hello</p>
-        <div className={Styles.tryme}>
+        <div className={Styles.box}>
           Moduled scss class
         </div>
       </div>
