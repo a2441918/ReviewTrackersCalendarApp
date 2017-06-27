@@ -19,7 +19,7 @@ module.exports = {
   entry: [
     'react-hot-loader/patch',
     `webpack-dev-server/client?http://${process.env.NODE_HOST || 'localhost'}:${process.env.NODE_PORT || 8111}`,
-    './index.js'
+    './'
   ],
   
   output: {

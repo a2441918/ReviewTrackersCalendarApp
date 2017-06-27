@@ -16,8 +16,8 @@ module.exports = {
   context: resolve(__dirname, 'src'),
   
   entry: [
-    './index.js',
-    './assets/scss/app.scss'
+    './',
+    './assets/scss/app'
   ],
   
   output: {
