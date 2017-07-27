@@ -54,7 +54,12 @@ module.exports = {
   },
   
   resolve: {
-    extensions: ['.js', '.jsx', '.scss']
+    extensions: ['.js', '.jsx', '.scss'],
+    alias: {
+      variables: resolve(__dirname, 'src/assets/scss/utils/variables'),
+      mixins: resolve(__dirname, 'src/assets/scss/utils/mixins'),
+      respond: resolve(__dirname, 'src/assets/scss/utils/respond')
+    }
   },
   
   plugins: [
