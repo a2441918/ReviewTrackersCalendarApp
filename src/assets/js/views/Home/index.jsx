@@ -11,15 +11,15 @@ export default class extends Component {
       <div>
         <h1>Home</h1>
         <p>
-          Base64 data:image<br />
+          <strong>Base64 data:image</strong><br />
           <img src={Google} alt="Google" />
         </p>
         <p>
-          Standard src img<br />
+          <strong>Standard src img</strong><br />
           <img src={Alaska} width="300" alt="Alaska" />
         </p>
-        <div className={Styles.module}>I'm a moduled CSS class. Check me out in /scss/views/home.scss.</div>
-        <p className="global">I'm a global CSS class. Check me out in /scss/app.scss.</p>
+        <p className={Styles.module}>This is a css module class</p>
+        <p className="global">This is a global css class</p>
       </div>
     )
   }
