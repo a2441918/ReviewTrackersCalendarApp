@@ -2,7 +2,7 @@
  * Production Webpack Configuration
  */
 
-let env = require('dotenv').config();
+let Dotenv = require('dotenv-webpack');
 let { resolve } = require('path');
 
 let webpack = require('webpack');
@@ -63,6 +63,10 @@ module.exports = {
   },
   
   plugins: [
+    new Dotenv({
+      path: './.env.production',
+      safe: true
+    }),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`,
@@ -85,7 +89,6 @@ module.exports = {
       },
       comments: false,
     }),
-    new webpack.DefinePlugin({ 'process.env': { NODE_ENV: JSON.stringify('production') } }),
     new ExtractTextPlugin({ filename: 'app-[hash].css', disable: false, allChunks: true })
   ]
   

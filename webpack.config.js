@@ -2,13 +2,12 @@
  * Development Webpack Configuration
  */
 
-let env = require('dotenv').config();
+let Dotenv = require('dotenv-webpack');
 let { resolve } = require('path');
 
 let webpack = require('webpack');
 let DashboardPlugin = require('webpack-dashboard/plugin');
 let HtmlWebpackPlugin = require('html-webpack-plugin');
-let OpenBrowserPlugin = require('open-browser-webpack-plugin');
 
 module.exports = {
   
@@ -80,6 +79,10 @@ module.exports = {
   },
   
   plugins: [
+    new Dotenv({
+      path: './.env',
+      safe: true
+    }),
     new webpack.optimize.ModuleConcatenationPlugin(),
     new HtmlWebpackPlugin({
       template: `${__dirname}/src/index.html`,
@@ -87,8 +90,7 @@ module.exports = {
       inject: 'body',
     }),
     new webpack.HotModuleReplacementPlugin(),
-    new DashboardPlugin(),
-    new OpenBrowserPlugin({url: `http://${process.env.NODE_HOST}:${process.env.NODE_PORT}`}),
+    new DashboardPlugin()
   ]
   
 }
