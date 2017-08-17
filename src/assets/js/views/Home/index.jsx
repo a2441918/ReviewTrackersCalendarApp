@@ -15,7 +15,7 @@ export default class extends Component {
           <img src={Google} alt="Google" />
         </p>
         <p>
-          <strong>Standard src img</strong><br />
+          <strong>Standard src img!</strong><br />
           <img src={Alaska} width="300" alt="Alaska" />
         </p>
         <p className={Styles.module}>This is a css module class</p>

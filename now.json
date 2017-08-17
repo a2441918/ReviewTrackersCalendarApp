@@ -1,3 +1,4 @@
 {
-  "name": "webpack-react"
+  "name": "webpack-react",
+  "alias": "webpack-react"
 }
