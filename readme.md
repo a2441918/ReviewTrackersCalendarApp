@@ -11,6 +11,7 @@ Simple ES6 React with Sass boilerplate under Webpack 3. Based loosely on [Klimen
 - [x] Hot Module Replacement using [react-hot-loader](https://github.com/gaearon/react-hot-loader)
 - [x] Development and production .env config
 - [x] Production config with separate CSS generation with [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)
+- [x] Ready to deploy to [now](https://github.com/zeit/now-cli) out the box
 
 ## Dev server
 
@@ -36,6 +37,8 @@ Start the server
 Open your browser to `http://localhost:8111`. You can change the hostname and port by editing the values in the `.env` you created above.
 
 [dotenv-safe](https://www.npmjs.com/package/dotenv-safe) is used for the `.env` variables, therefore all `.env` vars must be declared in the `.env.example` file for them to be usable in the app.
+
+By default `.env.production` is in `.gitignore`, if this doesn't contain any sensitive information, you may want to commit it.
 
 ## Production build
 
