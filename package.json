@@ -7,10 +7,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "clear && webpack-dev-server",
-    "clean": "rimraf dist",
+    "clean": "rimraf build",
     "lint": "eslint src || true",
     "dev": "webpack-dashboard -t 'Webpack Dashboard' -- webpack-dev-server",
-    "build": "npm run clean && webpack --config webpack.production.config.js --progress --profile --colors"
+    "build": "npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
+    "deploy": "npm run build && cp now.json ./build && now ./build --public --static"
   },
   "repository": {
     "type": "git",

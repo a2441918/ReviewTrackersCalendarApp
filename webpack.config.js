@@ -24,7 +24,7 @@ module.exports = {
   
   output: {
     filename: 'app-[hash].js',
-    path: resolve(__dirname, 'dist'),
+    path: resolve(__dirname, 'build'),
     publicPath: '/',
   },
   
@@ -60,7 +60,7 @@ module.exports = {
   devServer: {
     host: process.env.NODE_HOST || 'localhost',
     port: process.env.NODE_PORT || 8111,
-    contentBase: resolve(__dirname, 'dist'),
+    contentBase: resolve(__dirname, 'build'),
     publicPath: '/',
     historyApiFallback: true,
     hot: true,
