@@ -9,6 +9,7 @@ Simple ES6 React with Sass boilerplate under Webpack 3. Based loosely on [Klimen
 - [x] Sass support utilising [CSS modules](https://css-modules.github.io/webpack-demo/)
 - [x] ECMAScript 6 support through [Babel](https://babeljs.io/)
 - [x] Hot Module Replacement using [react-hot-loader](https://github.com/gaearon/react-hot-loader)
+- [x] Testing using [Jest](https://facebook.github.io/jest) and [Enzyme](https://github.com/airbnb/enzyme)
 - [x] Development and production .env config
 - [x] Production config with separate CSS generation with [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)
 - [x] Ready to deploy to [now](https://github.com/zeit/now-cli) out the box
@@ -40,6 +41,12 @@ Open your browser to `http://localhost:8111`. You can change the hostname and po
 
 By default `.env.production` is in `.gitignore`, if this doesn't contain any sensitive information, you may want to commit it.
 
+## Testing
+
+A few simple tests have been included using [Jest](https://facebook.github.io/jest) and [Enzyme](https://github.com/airbnb/enzyme).
+
+	npm test
+
 ## Production build
 
 To build production ready assets, simply run:
@@ -65,4 +72,15 @@ To alias your deployment (e.g. `my-app.example.com` or `my-app.now.sh`) supply y
 	npm run deploy
 	
 Your deployment should now be aliased.
+
+## Available commands
+
+- `npm start` - start the dev server
+- `npm run clean` - delete the `build` folder
+- `npm run lint` - run a eslint check
+- `npm test` - run all tests
+- `npm run dev` - start the dev server using webpack dashboard
+- `npm run build` - create a production ready build in the `build` folder
+- `npm run deploy` - deploy the production build to [now](https://github.com/zeit/now-cli)
+- `npm run alias` - alias the deployed build on [now](https://github.com/zeit/now-cli)
 
