@@ -73,6 +73,11 @@ To alias your deployment (e.g. `my-app.example.com` or `my-app.now.sh`) supply y
 	
 Your deployment should now be aliased.
 
+If you want to deploy to now for production also, then you will likely have a slightly different config for production (i.e. a different `alias` pointing to your live domain). There is a supplied `now.production.json` config for this. To deploy/alias to production run:
+
+	npm run deploy-production
+	npm run alias-production
+
 ## Available commands
 
 - `npm start` - start the dev server
@@ -83,4 +88,7 @@ Your deployment should now be aliased.
 - `npm run build` - create a production ready build in the `build` folder
 - `npm run deploy` - deploy the production build to [now](https://github.com/zeit/now-cli)
 - `npm run alias` - alias the deployed build on [now](https://github.com/zeit/now-cli)
+- `npm run deploy-production` - deploy the production build to a production ready [now](https://github.com/zeit/now-cli) instance
+- `npm run alias-production` - alias the deployed build on a production ready [now](https://github.com/zeit/now-cli) instance
+
 
