@@ -12,7 +12,9 @@
     "dev": "webpack-dashboard -t 'Webpack Dashboard' -- webpack-dev-server",
     "build": "npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
     "deploy": "npm run build && cp now.json ./build && now ./build --public --static",
-    "alias": "cp now.json ./build && cd ./build && now alias"
+    "alias": "cp now.json ./build && cd ./build && now alias",
+    "deploy-production": "npm run build && cp now.production.json ./build/now.json && now ./build --public --static",
+    "alias-production": "cp now.production.json ./build/now.json && cd ./build && now alias"
   },
   "repository": {
     "type": "git",
