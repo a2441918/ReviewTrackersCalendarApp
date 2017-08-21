@@ -12,7 +12,7 @@ Simple ES6 React with Sass boilerplate under Webpack 3. Based loosely on [Klimen
 - [x] Testing using [Jest](https://facebook.github.io/jest) and [Enzyme](https://github.com/airbnb/enzyme)
 - [x] Development and production .env config
 - [x] Production config with separate CSS generation with [Extract Text Plugin](https://github.com/webpack-contrib/extract-text-webpack-plugin)
-- [x] Ready to deploy to [now](https://github.com/zeit/now-cli) out the box
+- [x] Ready to deploy and alias to [now](https://github.com/zeit/now-cli) out the box
 
 ## Dev server
 
@@ -69,7 +69,7 @@ This will build the production assets and deploy to now.
 
 To alias your deployment (e.g. `my-app.example.com` or `my-app.now.sh`) supply your `alias` in the `now.json` and run:
 
-	npm run deploy
+	npm run alias
 	
 Your deployment should now be aliased.
 
