@@ -1,6 +1,6 @@
 import React from 'react';
 import {shallow} from 'enzyme';
-import Primary from '../../src/assets/js/partials/navigation/primary';
+import Primary from '../../src/js/partials/navigation/primary';
 import {NavLink} from 'react-router-dom';
 
 describe('<Primary />', () => {
@@ -11,7 +11,7 @@ describe('<Primary />', () => {
   });
   
   it('should exist', () => {
-    expect(component).toBeDefined();
+    expect(component).toBeTruthy();
   });
   
   it('contains 3 <NavLink /> components', () => {

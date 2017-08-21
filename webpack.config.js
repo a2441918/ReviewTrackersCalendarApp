@@ -39,7 +39,7 @@ module.exports = {
         loaders: ['style-loader', 'css-loader?modules&importLoaders=1&localIdentName=[name]__[local]__[hash:base64:5]', 'postcss-loader', 'sass-loader'],
         exclude: /node_modules/
       },
-      { test: /\.(png|jpg|gif)$/, use: 'url-loader?limit=15000&name=assets/[name]-[hash].[ext]' },
+      { test: /\.(png|jpg|gif)$/, use: 'url-loader?limit=15000&name=[name]-[hash].[ext]' },
       { test: /\.eot(\?v=\d+.\d+.\d+)?$/, use: 'file-loader' },
       { test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/, use: 'url-loader?limit=10000&mimetype=application/font-woff' },
       { test: /\.[ot]tf(\?v=\d+.\d+.\d+)?$/, use: 'url-loader?limit=10000&mimetype=application/octet-stream' },
@@ -50,9 +50,9 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx', '.scss'],
     alias: {
-      variables: resolve(__dirname, 'src/assets/scss/utils/variables'),
-      mixins: resolve(__dirname, 'src/assets/scss/utils/mixins'),
-      respond: resolve(__dirname, 'src/assets/scss/utils/respond')
+      variables: resolve(__dirname, 'src/scss/utils/variables'),
+      mixins: resolve(__dirname, 'src/scss/utils/mixins'),
+      respond: resolve(__dirname, 'src/scss/utils/respond')
     }
   },
   
