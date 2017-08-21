@@ -1,7 +1,7 @@
 {
-  "name": "webpack-react-boilerplate",
-  "version": "0.0.1",
-  "description": "Webpack 3 React boilerplate",
+  "name": "webpack-react-redux-boilerplate",
+  "version": "1.0.0",
+  "description": "Webpack 3 React, Redux and Sass boilerplate",
   "private": false,
   "license": "MIT",
   "scripts": {
@@ -18,18 +18,20 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com:thekeogh/webpack-react.git"
+    "url": "git+ssh://git@github.com:thekeogh/webpack-react-redux.git"
   },
   "keywords": [
     "react",
     "webpack3",
-    "boilerplate"
+    "boilerplate",
+    "redux",
+    "sass"
   ],
   "author": "Steve McKeogh",
   "bugs": {
-    "url": "https://github.com/thekeogh/webpack-react/issues"
+    "url": "https://github.com/thekeogh/webpack-react-redux/issues"
   },
-  "homepage": "http://keogh.site",
+  "homepage": "https://github.com/thekeogh/webpack-react-redux/",
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.26.0",

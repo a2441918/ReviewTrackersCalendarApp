@@ -1,9 +1,10 @@
-# Webpack 3 ES6 React and Sass Boilerplate
+# Webpack 3 ES6 React, Redux and Sass Boilerplate
 
-Simple ES6 React with Sass boilerplate under Webpack 3. Based loosely on [Kliment Petrov boilerplate](https://github.com/KleoPetroff/react-webpack-boilerplate).
+Simple ES6 React, Redux and Sass boilerplate under Webpack 3. Based loosely on [Kliment Petrov boilerplate](https://github.com/KleoPetroff/react-webpack-boilerplate).
 
 - [x] [React](https://facebook.github.io/react/) 15.6.x
 - [x] [React Router](https://reacttraining.com/react-router/) 4.1.x
+- [x] [Redux](http://redux.js.org/) 3.7.x
 - [x] [Webpack](https://webpack.github.io/) 3.0.x with [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html) 2.5.x
 - [x] [Webpack dashboard](https://github.com/FormidableLabs/webpack-dashboard) included if prefered
 - [x] Sass support utilising [CSS modules](https://css-modules.github.io/webpack-demo/)
@@ -18,7 +19,7 @@ Simple ES6 React with Sass boilerplate under Webpack 3. Based loosely on [Klimen
 
 Ensure you have Node installed, then;
 
-	git clone https://github.com/thekeogh/webpack-react .
+	git clone https://github.com/thekeogh/webpack-react-redux .
 	
 Install node modules
 
