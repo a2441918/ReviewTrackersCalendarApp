@@ -6,6 +6,7 @@ Thumbs.db
 node_modules
 build
 .module-cache
+np-debug.log
 logs
 *.log
 .env
