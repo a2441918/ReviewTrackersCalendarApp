@@ -54,7 +54,7 @@ To build production ready assets, simply run:
 
 	npm run build
 	
-This will build a uglified `app-[hash].js` and a minified `app-[hash].css` and automatically create a `index.html` linking these files for you in a `dist/` directory.
+This will build a uglified `app-[hash].js` and a minified `app-[hash].css` and automatically create a `index.html` linking these files for you in a `build/` directory.
 
 The `build/` directory is `.gitignore`'d by default, and purged before every build.
 
