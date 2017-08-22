@@ -30,6 +30,9 @@ export default class extends Component {
         <div style={{padding: '0 0 24px', margin: '0 0 24px', borderBottom: 'solid 2px #ddd'}}>
           <p className="global">This is a global css class</p>
         </div>
+        <div style={{padding: '0 0 24px', margin: '0 0 24px', borderBottom: 'solid 2px #ddd'}}>
+          <p>Fake API key from .env: <strong>{process.env.FAKE_API_KEY}</strong></p>
+        </div>
       </div>
     )
   }
