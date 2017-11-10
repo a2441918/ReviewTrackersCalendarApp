@@ -1,7 +1,10 @@
 import React from 'react';
-import {shallow} from 'enzyme';
+import { configure, shallow } from 'enzyme';
+import Adapter from 'enzyme-adapter-react-16';
 import Primary from '../../src/js/partials/navigation/primary';
 import {NavLink} from 'react-router-dom';
+
+configure({ adapter: new Adapter() });
 
 describe('<Primary /> partial', () => {
   let component;
