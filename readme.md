@@ -5,7 +5,7 @@ Simple ES6 React, Redux and Sass boilerplate under Webpack 3. Based loosely on [
 - [x] [React](https://facebook.github.io/react/) 15.6.x
 - [x] [React Router](https://reacttraining.com/react-router/) 4.1.x
 - [x] [Redux](http://redux.js.org/) 3.7.x
-- [x] [Webpack](https://webpack.github.io/) 3.0.x with [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html) 2.5.x
+- [x] [Webpack](https://webpack.github.io/) 3.x with [Webpack Dev Server](https://webpack.github.io/docs/webpack-dev-server.html) 2.5.x
 - [x] [Webpack dashboard](https://github.com/FormidableLabs/webpack-dashboard) included if prefered
 - [x] Sass support utilising [CSS modules](https://css-modules.github.io/webpack-demo/)
 - [x] ECMAScript 6 support through [Babel](https://babeljs.io/)
