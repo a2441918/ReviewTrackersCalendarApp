@@ -40,7 +40,7 @@ Start the server
 
 ```shell
 $ npm start
-// Or for Webpack Dashboard
+# or for Webpack Dashboard
 $ npm run dev
 ```
 
