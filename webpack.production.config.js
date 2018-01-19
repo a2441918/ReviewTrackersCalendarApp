@@ -2,12 +2,12 @@
  * Production Webpack Configuration
  */
 
-let Dotenv = require('dotenv-webpack');
-let { resolve } = require('path');
+const Dotenv = require('dotenv-webpack');
+const { resolve } = require('path');
 
-let webpack = require('webpack');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
+const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   

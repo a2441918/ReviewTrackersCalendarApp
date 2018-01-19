@@ -2,12 +2,15 @@
  * Development Webpack Configuration
  */
 
-let Dotenv = require('dotenv-webpack');
-let { resolve } = require('path');
+const Dotenv = require('dotenv-webpack');
+const { resolve } = require('path');
 
-let webpack = require('webpack');
-let DashboardPlugin = require('webpack-dashboard/plugin');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
+const DashboardPlugin = require('webpack-dashboard/plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
+const NODE_HOST = 'localhost';
+const NODE_PORT = 8111;
 
 module.exports = {
   
@@ -17,7 +20,7 @@ module.exports = {
   
   entry: [
     'react-hot-loader/patch',
-    `webpack-dev-server/client?http://${process.env.NODE_HOST || 'localhost'}:${process.env.NODE_PORT || 8111}`,
+    `webpack-dev-server/client?http://${NODE_HOST}:${NODE_PORT}`,
     './'
   ],
   
@@ -57,8 +60,8 @@ module.exports = {
   },
   
   devServer: {
-    host: process.env.NODE_HOST || 'localhost',
-    port: process.env.NODE_PORT || 8111,
+    host: NODE_HOST,
+    port: NODE_PORT,
     contentBase: resolve(__dirname, 'build'),
     publicPath: '/',
     historyApiFallback: true,

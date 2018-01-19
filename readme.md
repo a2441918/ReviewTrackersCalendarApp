@@ -19,24 +19,32 @@ Simple ES6 React, Redux and Sass boilerplate under Webpack 3. Based loosely on [
 
 Ensure you have Node installed, then;
 
-	git clone https://github.com/thekeogh/webpack-react-redux .
-	
+```shell
+$ git clone https://github.com/thekeogh/webpack-react-redux .
+```
+
 Install node modules
 
-	npm install
-	
+```shell
+$ npm install
+```
+
 Copy the `.env.example` for your `development` and `production` variables.
 
-	cp .env.example .env
-	cp .env.example .env.production
-	
+```Shell
+$ cp .env.example .env
+$ cp .env.example .env.production
+```
+
 Start the server
 
-	npm start
-	// Or for Webpack Dashboard
-	npm run dev
-	
-Open your browser to `http://localhost:8111`. You can change the hostname and port by editing the values in the `.env` you created above.
+```shell
+$ npm start
+// Or for Webpack Dashboard
+$ npm run dev
+```
+
+Open your browser to `http://localhost:8111`. You can change the hostname and port within the `webpack.config.js` file.
 
 [dotenv-safe](https://www.npmjs.com/package/dotenv-safe) is used for the `.env` variables, therefore all `.env` vars must be declared in the `.env.example` file for them to be usable in the app.
 
@@ -48,14 +56,18 @@ By default `.env.production` is in `.gitignore`, if this doesn't contain any sen
 
 A few simple tests have been included using [Jest](https://facebook.github.io/jest) and [Enzyme](https://github.com/airbnb/enzyme).
 
-	npm test
+```Shell
+$ npm test
+```
 
 ## Production build
 
 To build production ready assets, simply run:
 
-	npm run build
-	
+```shell
+$ npm run build
+```
+
 This will build a uglified `app-[hash].js` and a minified `app-[hash].css` and automatically create a `index.html` linking these files for you in a `build/` directory.
 
 The `build/` directory is `.gitignore`'d by default, and purged before every build.
@@ -66,20 +78,26 @@ We can deploy to [now](https://github.com/zeit/now-cli) ([zeit](https://zeit.co/
 
 Edit the `now.json` in the root, change this to the name of your app, then run:
 
-	npm run deploy
-	
+```Shell
+$ npm run deploy
+```
+
 This will build the production assets and deploy to now. 
 
 To alias your deployment (e.g. `my-app.example.com` or `my-app.now.sh`) supply your `alias` in the `now.json` and run:
 
-	npm run alias
-	
+```shell
+$ npm run alias
+```
+
 Your deployment should now be aliased.
 
 If you want to deploy to now for production also, then you will likely have a slightly different config for production (i.e. a different `alias` pointing to your live domain). There is a supplied `now.production.json` config for this. To deploy/alias to production run:
 
-	npm run deploy-production
-	npm run alias-production
+```shell
+$ npm run deploy-production
+$ npm run alias-production
+```
 
 ## Available commands
 
