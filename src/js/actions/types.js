@@ -1,0 +1,8 @@
+export const SET_DAY = 'SET_DAY';
+export const NEXT_MONTH = 'NEXT_MONTH';
+export const PREVIOUS_MONTH = 'PREVIOUS_MONTH';
+export const TOGGLE_PANEL = 'TOGGLE_PANEL';
+export const UPDATE_EVENT_NAME = 'UPDATE_EVENT_NAME';
+export const UPDATE_EVENT_TYPE = 'UPDATE_EVENT_TYPE';
+export const TOGGLE_EVENT_LIST = 'TOGGLE_EVENT_LIST';
+export const REMOVE_EVENT = 'REMOVE_EVENT';

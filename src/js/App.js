@@ -3,12 +3,9 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store';
 
-import '../scss/app';
+// import '../scss/app';
 
-import Primary from './partials/navigation/primary';
-import Home from './views/Home';
-import About from './views/About';
-import NotFound from './views/NotFound';
+import Home from './index';
 
 export default class App extends Component {
   
@@ -17,11 +14,8 @@ export default class App extends Component {
       <Provider store={store}>
         <Router>
           <div>
-            <Primary />
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route path="/about" component={About} />
-              <Route component={NotFound}/>
             </Switch>
           </div>
         </Router>
